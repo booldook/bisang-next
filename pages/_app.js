@@ -11,6 +11,7 @@ const persistor = persistStore(store);
 
 
 function App({ Component, pageProps }) {
+  console.log(pageProps)
   return (
     <PersistGate persistor={persistor}>
       <Component {...pageProps} />
